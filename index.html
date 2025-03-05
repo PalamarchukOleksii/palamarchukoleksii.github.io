@@ -3,111 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio - Oleksii Palamarchuk</title>
+    <title>Oleksii Palamarchuk - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <meta
+      name="description"
+      content="Portfolio of Oleksii Palamarchuk, Aspiring ASP.NET and ReactJS Developer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="main-container">
-      <section class="first-impression-container">
-        <img alt="avatar" class="avatar" />
+      <header class="first-impression-container">
+        <img
+          src="assets/images/profile-picture.jpg"
+          alt="Oleksii Palamarchuk"
+          class="avatar"
+          loading="lazy"
+        />
         <div class="info">
           <div class="about-me">
-            <h1>Hi, I'm Oleksii Palamarchuk</h1>
-            <h2>Aspiring ASP.NET and ReactJS Developer</h2>
+            <h1 class="primary-text">Hi, I'm Oleksii Palamarchuk</h1>
+            <h2 class="secondary-text">
+              Aspiring Full-Stack Developer | ASP.NET & ReactJS
+            </h2>
           </div>
-          <div class="contacts">
-            <a
-              href="https://www.linkedin.com/in/oleksii-palamarchuk-760b0b28a"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <img
-                src="assets/icons/logo-linkedin.svg"
-                alt="LinkedIn"
-                class="icon"
-              />
-            </a>
-            <a
-              href="https://github.com/PalamarchukOleksii"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <img
-                src="assets/icons/logo-github.svg"
-                alt="GitHub"
-                class="icon"
-              />
-            </a>
-          </div>
+          <nav class="contacts">
+            <div class="contacts-block">
+              <a
+                href="https://www.linkedin.com/in/oleksii-palamarchuk-760b0b28a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                title="Connect on LinkedIn"
+                class="contact-entry"
+              >
+                <i class="fa-brands fa-linkedin fa-2x icon"></i>
+                <span class="contact-label">LinkedIn Profile</span>
+              </a>
+              <a
+                href="https://github.com/PalamarchukOleksii"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                title="View GitHub Repositories"
+                class="contact-entry"
+              >
+                <i class="fa-brands fa-square-github fa-2x icon"></i>
+                <span class="contact-label">GitHub Repositories</span>
+              </a>
+            </div>
+            <div class="contacts-block">
+              <a
+                href="mailto:oleksiypalamarchuck@gmail.com"
+                aria-label="Send Email"
+                title="Send an Email"
+                class="contact-entry"
+              >
+                <i class="fa-solid fa-square-envelope fa-2x icon"></i>
+                <span class="contact-label">oleksiypalamarchuck@gmail.com</span>
+              </a>
+              <a
+                href="tel:+380638960409"
+                aria-label="Call Phone Number"
+                title="Call Me"
+                class="contact-entry"
+              >
+                <i class="fa-solid fa-square-phone fa-2x icon"></i>
+                <span class="contact-label">+38 (063) 896-0409</span>
+              </a>
+            </div>
+          </nav>
         </div>
-      </section>
+      </header>
 
       <section class="skills-container">
-        <h2>Skills</h2>
-        <div class="skills-list">
-          <div class="skill">C#</div>
-          <div class="skill">ASP.NET</div>
-          <div class="skill">Entity Framework Core</div>
-          <div class="skill">SignalR</div>
-          <div class="skill">MediatR</div>
-          <div class="skill">FluentValidation</div>
-          <div class="skill">Microsoft SQL Server</div>
-          <div class="skill">ReactJS</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">HTML & CSS</div>
-          <div class="skill">Axios</div>
+        <h2 class="primary-text section-title">Technical Skills</h2>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h3 class="secondary-text">Backend Technologies</h3>
+            <div class="skills-list">
+              <div class="skill">ASP.NET Core</div>
+              <div class="skill">C#</div>
+              <div class="skill">Entity Framework Core</div>
+              <div class="skill">SignalR</div>
+              <div class="skill">MediatR</div>
+              <div class="skill">REST API</div>
+              <div class="skill">Web API</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="secondary-text">Frontend Technologies</h3>
+            <div class="skills-list">
+              <div class="skill">ReactJS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">HTML5</div>
+              <div class="skill">CSS3</div>
+              <div class="skill">Axios</div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="secondary-text">Database & Tools</h3>
+            <div class="skills-list">
+              <div class="skill">Microsoft SQL Server</div>
+              <div class="skill">Git</div>
+              <div class="skill">Docker</div>
+              <div class="skill">FluentValidation</div>
+              <div class="skill">Postman</div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="projects-container">
-        <h2>Projects</h2>
+        <h2 class="primary-text section-title">Projects</h2>
         <div class="projects-list">
-          <div class="project-info">
-            <h3>Social-Campus</h3>
+          <article class="project-info">
+            <h3 class="primary-text">Social-Campus</h3>
             <div class="project-pic">
-              <img alt="social-campus" />
+              <img
+                src="assets/images/social-campus-preview.jpg"
+                alt="Social-Campus Project Preview"
+                loading="lazy"
+              />
             </div>
-            <p>
-              A student-focused social network for connecting, sharing content,
-              and organizing events securely.
+            <p class="secondary-text">
+              A comprehensive student-focused social network designed for secure
+              content sharing, event organization, and academic community
+              building.
             </p>
             <a
               href="https://github.com/PalamarchukOleksii/Social-Campus"
+              class="repo-link"
               target="_blank"
-              >GitHub Repository</a
+              rel="noopener noreferrer"
             >
-          </div>
-          <div class="project-info">
-            <h3>Believe or Not Believe Card Game</h3>
+              View GitHub Repository
+            </a>
+          </article>
+
+          <article class="project-info">
+            <h3 class="primary-text">Believe or Not Believe Card Game</h3>
             <div class="project-pic">
-              <img alt="card-game" />
+              <img
+                src="assets/images/card-game-preview.jpg"
+                alt="Card Game Project Preview"
+                loading="lazy"
+              />
             </div>
-            <p>
-              Implementation of the 'Believe or Not Believe' card game with
-              real-time communication, where players make decisions based on
-              belief or skepticism.
+            <p class="secondary-text">
+              An interactive multiplayer card game implementing real-time
+              communication mechanics, where players engage through belief and
+              skepticism challenges.
             </p>
             <a
               href="https://github.com/PalamarchukOleksii/BelieveOrNotBelieveGame"
+              class="repo-link"
               target="_blank"
-              >GitHub Repository</a
+              rel="noopener noreferrer"
             >
-          </div>
+              View GitHub Repository
+            </a>
+          </article>
         </div>
       </section>
 
       <section class="education-container">
-        <h2>Education</h2>
-        <p>
-          National Technical University of Ukraine 'Kyiv Polytechnic Institute'
-        </p>
-        <p>Bachelor's degree in System Analysis (09/2022 - Present)</p>
+        <h2 class="primary-text section-title">Education</h2>
+        <div class="education-details">
+          <div>
+            <h3 class="primary-text">
+              National Technical University of Ukraine 'Kyiv Polytechnic
+              Institute'
+            </h3>
+            <p class="secondary-text">Bachelor's Degree in System Analysis</p>
+          </div>
+          <p class="secondary-text">September 2022 - Present</p>
+        </div>
       </section>
 
       <section class="languages-container">
-        <h2>Languages</h2>
-        <h3>Ukrainian Native</h3>
-        <h3>English Intermediate</h3>
+        <h2 class="primary-text section-title">Languages</h2>
+        <div class="language-list">
+          <div class="language-item">
+            <div class="language-text">
+              <h3 class="primary-text">Ukrainian</h3>
+              <p class="secondary-text">Native Proficiency</p>
+            </div>
+            <div class="dot-container">
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+            </div>
+          </div>
+          <div class="language-item">
+            <div class="language-text">
+              <h3 class="primary-text">English</h3>
+              <p class="secondary-text">Intermediate Level</p>
+            </div>
+            <div class="dot-container">
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+              <div class="dot full"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </body>
