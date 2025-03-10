@@ -52,6 +52,7 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  gap: 10px;
 }
 
 .avatar {
@@ -251,7 +252,7 @@ body {
 
   .contacts {
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   .language-list {
@@ -286,7 +287,7 @@ body {
   }
 
   .contacts {
-    gap: 5px;
+    gap: 15px;
   }
 
   .repo-link {
