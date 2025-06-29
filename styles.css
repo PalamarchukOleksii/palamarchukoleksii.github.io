@@ -127,7 +127,7 @@ body {
 
 .projects-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -135,13 +135,19 @@ body {
 }
 
 .project-info {
-  width: calc(50% - 50px);
+  width: auto;
   padding: 20px;
   border: 1px solid var(--border-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap:15px;
 }
 
 .project-pic {
@@ -249,10 +255,17 @@ body {
     align-items: stretch;
     gap: 20px;
   }
+}
 
+@media (max-width: 768px) {
   .contacts {
     flex-direction: column;
     gap: 15px;
+  }
+
+  .education-details {
+    flex-direction: column;
+    gap: 10px;
   }
 
   .language-list {
@@ -284,6 +297,10 @@ body {
   .project-info {
     width: 100%;
     padding: 15px;
+  }
+
+  .project-links {
+    flex-direction: column;
   }
 
   .contacts {
